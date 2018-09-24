@@ -1,0 +1,69 @@
+Batch size: 4
+epoch     1: Train Err:   0.7500 Test Acc:   0.2167
+epoch  5001: Train Err:   0.7500 Test Acc:   0.2814
+epoch 10001: Train Err:   0.5000 Test Acc:   0.6589
+epoch 15001: Train Err:   0.0000 Test Acc:   0.7290
+epoch 20001: Train Err:   0.5000 Test Acc:   0.7619
+epoch 25001: Train Err:   0.0000 Test Acc:   0.7871
+epoch 30001: Train Err:   0.2500 Test Acc:   0.7980
+epoch 35001: Train Err:   0.0000 Test Acc:   0.8029
+epoch 40001: Train Err:   0.2500 Test Acc:   0.8092
+epoch 45001: Train Err:   0.0000 Test Acc:   0.8167
+epoch 50000: Train Err:   0.2500 Test Acc:   0.8201
+Time taken per epoch(sec):   0.003760 sec
+
+Batch size: 8
+epoch     1: Train Err:   0.7500 Test Acc:   0.2167
+epoch  5001: Train Err:   0.2500 Test Acc:   0.5159
+epoch 10001: Train Err:   0.3750 Test Acc:   0.5637
+epoch 15001: Train Err:   0.1250 Test Acc:   0.7499
+epoch 20001: Train Err:   0.5000 Test Acc:   0.7617
+epoch 25001: Train Err:   0.1250 Test Acc:   0.7856
+epoch 30001: Train Err:   0.2500 Test Acc:   0.7973
+epoch 35001: Train Err:   0.2500 Test Acc:   0.8020
+epoch 40001: Train Err:   0.1250 Test Acc:   0.8108
+epoch 45001: Train Err:   0.2500 Test Acc:   0.8133
+epoch 50000: Train Err:   0.2500 Test Acc:   0.8180
+Time taken per epoch(sec):   0.003803 sec
+
+Batch size: 16
+epoch     1: Train Err:   0.7500 Test Acc:   0.2167
+epoch  5001: Train Err:   0.5625 Test Acc:   0.5276
+epoch 10001: Train Err:   0.1250 Test Acc:   0.5662
+epoch 15001: Train Err:   0.0000 Test Acc:   0.7563
+epoch 20001: Train Err:   0.1875 Test Acc:   0.7576
+epoch 25001: Train Err:   0.1875 Test Acc:   0.7808
+epoch 30001: Train Err:   0.0625 Test Acc:   0.7977
+epoch 35001: Train Err:   0.1250 Test Acc:   0.8029
+epoch 40001: Train Err:   0.1875 Test Acc:   0.8106
+epoch 45001: Train Err:   0.0625 Test Acc:   0.8147
+epoch 50000: Train Err:   0.2500 Test Acc:   0.8180
+Time taken per epoch(sec):   0.003686 sec
+
+Batch size: 32
+epoch     1: Train Err:   0.8438 Test Acc:   0.2167
+epoch  5001: Train Err:   0.5000 Test Acc:   0.6291
+epoch 10001: Train Err:   0.3750 Test Acc:   0.6451
+epoch 15001: Train Err:   0.1562 Test Acc:   0.7490
+epoch 20001: Train Err:   0.2500 Test Acc:   0.7560
+epoch 25001: Train Err:   0.2812 Test Acc:   0.7847
+epoch 30001: Train Err:   0.1250 Test Acc:   0.7964
+epoch 35001: Train Err:   0.1875 Test Acc:   0.8052
+epoch 40001: Train Err:   0.2500 Test Acc:   0.8113
+epoch 45001: Train Err:   0.1562 Test Acc:   0.8160
+epoch 50000: Train Err:   0.1875 Test Acc:   0.8174
+Time taken per epoch(sec):   0.003800 sec
+
+Batch size: 64
+epoch     1: Train Err:   0.7969 Test Acc:   0.2167
+epoch  5001: Train Err:   0.5312 Test Acc:   0.4318
+epoch 10001: Train Err:   0.2656 Test Acc:   0.6453
+epoch 15001: Train Err:   0.2500 Test Acc:   0.7421
+epoch 20001: Train Err:   0.2031 Test Acc:   0.7567
+epoch 25001: Train Err:   0.1562 Test Acc:   0.7786
+epoch 30001: Train Err:   0.2031 Test Acc:   0.7980
+epoch 35001: Train Err:   0.2969 Test Acc:   0.8056
+epoch 40001: Train Err:   0.2500 Test Acc:   0.8099
+epoch 45001: Train Err:   0.1719 Test Acc:   0.8147
+epoch 50000: Train Err:   0.1875 Test Acc:   0.8187
+Time taken per epoch(sec):   0.004144 sec

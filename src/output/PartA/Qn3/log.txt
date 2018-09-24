@@ -1,0 +1,69 @@
+Hidden Neurons: 5
+epoch     1: Train Err:   0.8125 Test Acc:   0.2167
+epoch  5001: Train Err:   0.7500 Test Acc:   0.3008
+epoch 10001: Train Err:   0.3125 Test Acc:   0.5671
+epoch 15001: Train Err:   0.0625 Test Acc:   0.7306
+epoch 20001: Train Err:   0.0625 Test Acc:   0.7554
+epoch 25001: Train Err:   0.1875 Test Acc:   0.7750
+epoch 30001: Train Err:   0.1875 Test Acc:   0.7903
+epoch 35001: Train Err:   0.2500 Test Acc:   0.8038
+epoch 40001: Train Err:   0.2500 Test Acc:   0.8090
+epoch 45001: Train Err:   0.0625 Test Acc:   0.8156
+epoch 50000: Train Err:   0.1875 Test Acc:   0.8180
+Time taken per epoch(sec): 0.003971 sec
+
+Hidden Neurons: 10
+epoch     1: Train Err:   0.8125 Test Acc:   0.1060
+epoch  5001: Train Err:   0.5625 Test Acc:   0.4212
+epoch 10001: Train Err:   0.0625 Test Acc:   0.7256
+epoch 15001: Train Err:   0.3750 Test Acc:   0.7563
+epoch 20001: Train Err:   0.2500 Test Acc:   0.7747
+epoch 25001: Train Err:   0.2500 Test Acc:   0.7968
+epoch 30001: Train Err:   0.3750 Test Acc:   0.8090
+epoch 35001: Train Err:   0.2500 Test Acc:   0.8142
+epoch 40001: Train Err:   0.0625 Test Acc:   0.8162
+epoch 45001: Train Err:   0.1875 Test Acc:   0.8210
+epoch 50000: Train Err:   0.1250 Test Acc:   0.8223
+Time taken per epoch(sec): 0.003718 sec
+
+Hidden Neurons: 15
+epoch     1: Train Err:   0.7500 Test Acc:   0.0936
+epoch  5001: Train Err:   0.5000 Test Acc:   0.6074
+epoch 10001: Train Err:   0.1875 Test Acc:   0.7306
+epoch 15001: Train Err:   0.0625 Test Acc:   0.7549
+epoch 20001: Train Err:   0.3750 Test Acc:   0.7790
+epoch 25001: Train Err:   0.0625 Test Acc:   0.8007
+epoch 30001: Train Err:   0.0000 Test Acc:   0.8077
+epoch 35001: Train Err:   0.0625 Test Acc:   0.8147
+epoch 40001: Train Err:   0.3125 Test Acc:   0.8180
+epoch 45001: Train Err:   0.2500 Test Acc:   0.8212
+epoch 50000: Train Err:   0.0625 Test Acc:   0.8262
+Time taken per epoch(sec): 0.003778 sec
+
+Hidden Neurons: 20
+epoch     1: Train Err:   1.0000 Test Acc:   0.2417
+epoch  5001: Train Err:   0.6250 Test Acc:   0.4151
+epoch 10001: Train Err:   0.0625 Test Acc:   0.7193
+epoch 15001: Train Err:   0.1875 Test Acc:   0.7511
+epoch 20001: Train Err:   0.0625 Test Acc:   0.7729
+epoch 25001: Train Err:   0.1250 Test Acc:   0.7959
+epoch 30001: Train Err:   0.3125 Test Acc:   0.8079
+epoch 35001: Train Err:   0.1250 Test Acc:   0.8115
+epoch 40001: Train Err:   0.1875 Test Acc:   0.8147
+epoch 45001: Train Err:   0.1250 Test Acc:   0.8171
+epoch 50000: Train Err:   0.1250 Test Acc:   0.8223
+Time taken per epoch(sec): 0.003817 sec
+
+Hidden Neurons: 25
+epoch     1: Train Err:   0.5000 Test Acc:   0.2329
+epoch  5001: Train Err:   0.4375 Test Acc:   0.5227
+epoch 10001: Train Err:   0.3125 Test Acc:   0.6992
+epoch 15001: Train Err:   0.2500 Test Acc:   0.7481
+epoch 20001: Train Err:   0.1875 Test Acc:   0.7770
+epoch 25001: Train Err:   0.1250 Test Acc:   0.7998
+epoch 30001: Train Err:   0.1250 Test Acc:   0.8090
+epoch 35001: Train Err:   0.1250 Test Acc:   0.8156
+epoch 40001: Train Err:   0.1250 Test Acc:   0.8192
+epoch 45001: Train Err:   0.2500 Test Acc:   0.8205
+epoch 50000: Train Err:   0.1250 Test Acc:   0.8255
+Time taken per epoch(sec): 0.003798 sec

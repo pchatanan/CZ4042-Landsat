@@ -1,0 +1,4 @@
+# Machine learning libraries
+tensorflow-gpu
+matplotlib
+numpy
