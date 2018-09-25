@@ -1,64 +1,64 @@
 Beta: 0
-epoch     1: Train Err:   0.8125 Test Acc:   0.2167
-epoch  5001: Train Err:   0.6250 Test Acc:   0.5705
-epoch 10001: Train Err:   0.2500 Test Acc:   0.6095
-epoch 15001: Train Err:   0.0000 Test Acc:   0.7556
-epoch 20001: Train Err:   0.0625 Test Acc:   0.7592
-epoch 25001: Train Err:   0.1875 Test Acc:   0.7831
-epoch 30001: Train Err:   0.1875 Test Acc:   0.7948
-epoch 35001: Train Err:   0.1250 Test Acc:   0.8041
-epoch 40001: Train Err:   0.1875 Test Acc:   0.8099
-epoch 45001: Train Err:   0.0625 Test Acc:   0.8153
-epoch 50000: Train Err:   0.1875 Test Acc:   0.8185
+epoch     1: Train Err:   0.7833 Test Acc:   0.1985
+epoch  5001: Train Err:   0.4295 Test Acc:   0.5430
+epoch 10001: Train Err:   0.3905 Test Acc:   0.5865
+epoch 15001: Train Err:   0.2444 Test Acc:   0.7310
+epoch 20001: Train Err:   0.2408 Test Acc:   0.7395
+epoch 25001: Train Err:   0.2169 Test Acc:   0.7620
+epoch 30001: Train Err:   0.2052 Test Acc:   0.7715
+epoch 35001: Train Err:   0.1959 Test Acc:   0.7865
+epoch 40001: Train Err:   0.1901 Test Acc:   0.7935
+epoch 45001: Train Err:   0.1847 Test Acc:   0.7980
+epoch 50000: Train Err:   0.1815 Test Acc:   0.8015
 
 Beta: 0.001
-epoch     1: Train Err:   0.7500 Test Acc:   0.2417
-epoch  5001: Train Err:   0.6875 Test Acc:   0.2769
-epoch 10001: Train Err:   0.1875 Test Acc:   0.6282
-epoch 15001: Train Err:   0.4375 Test Acc:   0.7411
-epoch 20001: Train Err:   0.2500 Test Acc:   0.7578
-epoch 25001: Train Err:   0.2500 Test Acc:   0.7802
-epoch 30001: Train Err:   0.3750 Test Acc:   0.7968
-epoch 35001: Train Err:   0.2500 Test Acc:   0.8088
-epoch 40001: Train Err:   0.0625 Test Acc:   0.8113
-epoch 45001: Train Err:   0.1875 Test Acc:   0.8158
-epoch 50000: Train Err:   0.1250 Test Acc:   0.8171
+epoch     1: Train Err:   0.7583 Test Acc:   0.2305
+epoch  5001: Train Err:   0.7231 Test Acc:   0.2705
+epoch 10001: Train Err:   0.3718 Test Acc:   0.6110
+epoch 15001: Train Err:   0.2589 Test Acc:   0.7270
+epoch 20001: Train Err:   0.2422 Test Acc:   0.7400
+epoch 25001: Train Err:   0.2198 Test Acc:   0.7600
+epoch 30001: Train Err:   0.2032 Test Acc:   0.7755
+epoch 35001: Train Err:   0.1912 Test Acc:   0.7855
+epoch 40001: Train Err:   0.1887 Test Acc:   0.7900
+epoch 45001: Train Err:   0.1842 Test Acc:   0.7960
+epoch 50000: Train Err:   0.1829 Test Acc:   0.7965
 
-Beta: 1e-06
-epoch     1: Train Err:   0.7500 Test Acc:   0.2340
-epoch  5001: Train Err:   0.6250 Test Acc:   0.5283
-epoch 10001: Train Err:   0.2500 Test Acc:   0.7197
-epoch 15001: Train Err:   0.1250 Test Acc:   0.7526
-epoch 20001: Train Err:   0.3750 Test Acc:   0.7678
-epoch 25001: Train Err:   0.0625 Test Acc:   0.7910
-epoch 30001: Train Err:   0.0000 Test Acc:   0.8018
-epoch 35001: Train Err:   0.0625 Test Acc:   0.8077
-epoch 40001: Train Err:   0.3125 Test Acc:   0.8142
-epoch 45001: Train Err:   0.2500 Test Acc:   0.8169
-epoch 50000: Train Err:   0.0625 Test Acc:   0.8216
+Beta: 1e-6
+epoch     1: Train Err:   0.7660 Test Acc:   0.2350
+epoch  5001: Train Err:   0.4717 Test Acc:   0.5085
+epoch 10001: Train Err:   0.2803 Test Acc:   0.7000
+epoch 15001: Train Err:   0.2474 Test Acc:   0.7360
+epoch 20001: Train Err:   0.2322 Test Acc:   0.7470
+epoch 25001: Train Err:   0.2090 Test Acc:   0.7715
+epoch 30001: Train Err:   0.1982 Test Acc:   0.7810
+epoch 35001: Train Err:   0.1923 Test Acc:   0.7910
+epoch 40001: Train Err:   0.1858 Test Acc:   0.7950
+epoch 45001: Train Err:   0.1831 Test Acc:   0.8005
+epoch 50000: Train Err:   0.1784 Test Acc:   0.8020
 
-Beta: 1e-09
-epoch     1: Train Err:   0.8750 Test Acc:   0.1080
-epoch  5001: Train Err:   0.3750 Test Acc:   0.6519
-epoch 10001: Train Err:   0.0625 Test Acc:   0.7472
-epoch 15001: Train Err:   0.1875 Test Acc:   0.7612
-epoch 20001: Train Err:   0.0625 Test Acc:   0.7720
-epoch 25001: Train Err:   0.1250 Test Acc:   0.7946
-epoch 30001: Train Err:   0.3125 Test Acc:   0.8050
-epoch 35001: Train Err:   0.1250 Test Acc:   0.8113
-epoch 40001: Train Err:   0.1875 Test Acc:   0.8144
-epoch 45001: Train Err:   0.1250 Test Acc:   0.8169
-epoch 50000: Train Err:   0.1875 Test Acc:   0.8194
+Beta: 1e-9
+epoch     1: Train Err:   0.8920 Test Acc:   0.1120
+epoch  5001: Train Err:   0.3481 Test Acc:   0.6320
+epoch 10001: Train Err:   0.2528 Test Acc:   0.7315
+epoch 15001: Train Err:   0.2388 Test Acc:   0.7420
+epoch 20001: Train Err:   0.2280 Test Acc:   0.7515
+epoch 25001: Train Err:   0.2054 Test Acc:   0.7695
+epoch 30001: Train Err:   0.1950 Test Acc:   0.7850
+epoch 35001: Train Err:   0.1887 Test Acc:   0.7905
+epoch 40001: Train Err:   0.1856 Test Acc:   0.7960
+epoch 45001: Train Err:   0.1831 Test Acc:   0.7955
+epoch 50000: Train Err:   0.1806 Test Acc:   0.7995
 
 Beta: 1e-12
-epoch     1: Train Err:   0.8125 Test Acc:   0.2167
-epoch  5001: Train Err:   0.6875 Test Acc:   0.3497
-epoch 10001: Train Err:   0.3125 Test Acc:   0.6555
-epoch 15001: Train Err:   0.2500 Test Acc:   0.7540
-epoch 20001: Train Err:   0.1250 Test Acc:   0.7673
-epoch 25001: Train Err:   0.0625 Test Acc:   0.7957
-epoch 30001: Train Err:   0.1250 Test Acc:   0.8065
-epoch 35001: Train Err:   0.1875 Test Acc:   0.8126
-epoch 40001: Train Err:   0.1875 Test Acc:   0.8156
-epoch 45001: Train Err:   0.2500 Test Acc:   0.8203
-epoch 50000: Train Err:   0.1250 Test Acc:   0.8223
+epoch     1: Train Err:   0.7833 Test Acc:   0.1985
+epoch  5001: Train Err:   0.6503 Test Acc:   0.3315
+epoch 10001: Train Err:   0.3445 Test Acc:   0.6485
+epoch 15001: Train Err:   0.2460 Test Acc:   0.7330
+epoch 20001: Train Err:   0.2327 Test Acc:   0.7475
+epoch 25001: Train Err:   0.2043 Test Acc:   0.7700
+epoch 30001: Train Err:   0.1935 Test Acc:   0.7870
+epoch 35001: Train Err:   0.1874 Test Acc:   0.7950
+epoch 40001: Train Err:   0.1844 Test Acc:   0.7980
+epoch 45001: Train Err:   0.1797 Test Acc:   0.8040
+epoch 50000: Train Err:   0.1777 Test Acc:   0.8060

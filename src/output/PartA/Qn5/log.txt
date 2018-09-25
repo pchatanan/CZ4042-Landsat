@@ -1,25 +1,27 @@
-3 layers
-epoch     1: accuracy Train:   0.1875 Test:   0.2167
-epoch 20001: accuracy Train:   0.6875 Test:   0.7567
-epoch 40001: accuracy Train:   0.7500 Test:   0.8110
-epoch 60001: accuracy Train:   0.8750 Test:   0.8246
-epoch 80001: accuracy Train:   0.9375 Test:   0.8289
-epoch 100001: accuracy Train:   0.8125 Test:   0.8340
-epoch 120001: accuracy Train:   0.7812 Test:   0.8383
-epoch 140001: accuracy Train:   0.8438 Test:   0.8428
-epoch 160001: accuracy Train:   0.9375 Test:   0.8433
-epoch 180001: accuracy Train:   0.8750 Test:   0.8437
-epoch 200000: accuracy Train:   0.8750 Test:   0.8428
+3-layer
 
-4 layers
-epoch     1: accuracy Train:   0.1875 Test:   0.2167
-epoch 20001: accuracy Train:   0.3125 Test:   0.4124
-epoch 40001: accuracy Train:   0.6562 Test:   0.7369
-epoch 60001: accuracy Train:   0.8750 Test:   0.8101
-epoch 80001: accuracy Train:   0.9062 Test:   0.8244
-epoch 100001: accuracy Train:   0.8438 Test:   0.8316
-epoch 120001: accuracy Train:   0.7812 Test:   0.8381
-epoch 140001: accuracy Train:   0.8125 Test:   0.8431
-epoch 160001: accuracy Train:   0.9375 Test:   0.8440
-epoch 180001: accuracy Train:   0.8750 Test:   0.8453
-epoch 200000: accuracy Train:   0.8750 Test:   0.8476
+epoch     1: accuracy Train:   0.2167 Test:   0.1985
+epoch 20001: accuracy Train:   0.7567 Test:   0.7360
+epoch 40001: accuracy Train:   0.8110 Test:   0.7920
+epoch 60001: accuracy Train:   0.8246 Test:   0.8050
+epoch 80001: accuracy Train:   0.8289 Test:   0.8120
+epoch 100001: accuracy Train:   0.8340 Test:   0.8155
+epoch 120001: accuracy Train:   0.8383 Test:   0.8195
+epoch 140001: accuracy Train:   0.8428 Test:   0.8205
+epoch 160001: accuracy Train:   0.8433 Test:   0.8210
+epoch 180001: accuracy Train:   0.8437 Test:   0.8215
+epoch 200000: accuracy Train:   0.8428 Test:   0.8245
+
+4-layer
+
+epoch     1: accuracy Train:   0.2167 Test:   0.1985
+epoch 20001: accuracy Train:   0.4124 Test:   0.4090
+epoch 40001: accuracy Train:   0.7369 Test:   0.7180
+epoch 60001: accuracy Train:   0.8101 Test:   0.7950
+epoch 80001: accuracy Train:   0.8244 Test:   0.8075
+epoch 100001: accuracy Train:   0.8316 Test:   0.8125
+epoch 120001: accuracy Train:   0.8381 Test:   0.8185
+epoch 140001: accuracy Train:   0.8431 Test:   0.8195
+epoch 160001: accuracy Train:   0.8440 Test:   0.8230
+epoch 180001: accuracy Train:   0.8453 Test:   0.8230
+epoch 200000: accuracy Train:   0.8476 Test:   0.8250
