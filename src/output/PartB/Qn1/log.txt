@@ -1,0 +1,11 @@
+epoch     1: Validation Error: 5.64983e+10
+epoch  1001: Validation Error: 4.72624e+09
+epoch  2001: Validation Error: 4.56218e+09
+epoch  3001: Validation Error: 4.45228e+09
+epoch  4001: Validation Error: 4.33595e+09
+epoch  5001: Validation Error: 4.30537e+09
+epoch  6001: Validation Error: 4.27214e+09
+epoch  7001: Validation Error: 4.24716e+09
+epoch  8001: Validation Error: 4.21399e+09
+epoch  9001: Validation Error: 4.20492e+09
+epoch 10000: Validation Error: 4.15367e+09
