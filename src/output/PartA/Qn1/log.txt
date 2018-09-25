@@ -1,0 +1,11 @@
+epoch     1: accuracy Train:   0.2167 Test:   0.1985
+epoch  5001: accuracy Train:   0.6476 Test:   0.6195
+epoch 10001: accuracy Train:   0.6271 Test:   0.5975
+epoch 15001: accuracy Train:   0.7477 Test:   0.7255
+epoch 20001: accuracy Train:   0.7567 Test:   0.7360
+epoch 25001: accuracy Train:   0.7768 Test:   0.7545
+epoch 30001: accuracy Train:   0.7982 Test:   0.7750
+epoch 35001: accuracy Train:   0.8054 Test:   0.7890
+epoch 40001: accuracy Train:   0.8110 Test:   0.7920
+epoch 45001: accuracy Train:   0.8129 Test:   0.7965
+epoch 50000: accuracy Train:   0.8174 Test:   0.8005

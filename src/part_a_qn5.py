@@ -16,7 +16,7 @@ tf.set_random_seed(seed)
 
 # read train and test data
 X, K = load_data('./raw/sat_train.txt')
-X_tst, K_tst = load_data('./raw/sat_train.txt')
+X_tst, K_tst = load_data('./raw/sat_test.txt')
 
 num_features = X.shape[1]
 num_classes = K.shape[1]
@@ -61,6 +61,7 @@ accuracy = tf.reduce_mean(correct_prediction)
 
 with tf.Session() as sess:
     sess.run(tf.global_variables_initializer())
+    train_mini_acc = []
     train_acc = []
     test_acc = []
     for i in range(epochs):
@@ -71,7 +72,8 @@ with tf.Session() as sess:
         k_batch = K[rand_index]
 
         train_op.run(feed_dict={x0: x_batch, k: k_batch})
-        train_acc.append(accuracy.eval(feed_dict={x0: x_batch, k: k_batch}))
+        train_mini_acc.append(accuracy.eval(feed_dict={x0: x_batch, k: k_batch}))
+        train_acc.append(accuracy.eval(feed_dict={x0: X, k: K}))
         test_acc.append(accuracy.eval(feed_dict={x0: X_tst, k: K_tst}))
 
         if i % (epochs//10) == 0 or i == epochs-1:
@@ -79,7 +81,8 @@ with tf.Session() as sess:
 
 # plot learning curves
 plt.figure(1)
-plt.plot(range(epochs), train_acc, 'b', label='Train Accuracy')
+plt.plot(range(epochs), train_mini_acc, 'g', label='Train(batch) Accuracy')
+plt.plot(range(epochs), train_acc, 'b', label='Train(all) Accuracy')
 plt.plot(range(epochs), test_acc, 'r', label='Test Accuracy')
 plt.xlabel('Epochs')
 plt.ylabel('Accuracy')
