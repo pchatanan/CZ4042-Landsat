@@ -78,3 +78,38 @@ def k_fold(n, k):
         train_idx = list(index_set - set(test_idx))
         result.append((train_idx, test_idx))
     return result
+
+
+def init_weights_bias(n_in, n_hidden_list, n_out):
+    W, b = [], []
+    node_list = n_hidden_list
+    node_list.insert(0, n_in)
+    node_list.append(n_out)
+    total_layer = len(node_list)
+    for i in range(total_layer):
+        if i == total_layer - 1:
+            break
+        W.append(init_weights(node_list[i], node_list[i + 1]))
+        b.append(init_bias(node_list[i + 1]))
+    del node_list[0]
+    del node_list[-1]
+    return W, b
+
+
+def build_graph(x0, w, b, act_func_list, dropout_keep_prob):
+    x, u = [x0], []
+    for i, act_func in enumerate(act_func_list):
+        u.append(tf.matmul(x[i], w[i]) + b[i])
+        if dropout_keep_prob is not None:
+            x.append(tf.nn.dropout(act_func(u[i]), dropout_keep_prob))
+        else:
+            x.append(act_func(u[i]))
+    y = tf.matmul(x[-1], w[-1]) + b[-1]
+    return y
+
+
+def l2_reg(w):
+    reg = tf.nn.l2_loss(w.pop(0))
+    for weight in w:
+        reg += tf.nn.l2_loss(weight)
+    return reg

@@ -1,0 +1,83 @@
+3-Layer: dropout: None
+
+epoch     1: Test Error: 5.51863e+10
+epoch  2001: Test Error: 5.51829e+10
+epoch  4001: Test Error: 5.51715e+10
+epoch  6001: Test Error: 5.51174e+10
+epoch  8001: Test Error: 5.48317e+10
+epoch 10001: Test Error: 5.32707e+10
+epoch 12001: Test Error: 4.55124e+10
+epoch 14001: Test Error: 2.38018e+10
+epoch 16001: Test Error: 8.4084e+09
+epoch 18001: Test Error: 6.23123e+09
+epoch 20000: Test Error: 5.86709e+09
+
+3-Layer: dropout: 0.9
+
+epoch     1: Test Error: 5.51863e+10
+epoch  2001: Test Error: 5.51823e+10
+epoch  4001: Test Error: 5.51689e+10
+epoch  6001: Test Error: 5.51037e+10
+epoch  8001: Test Error: 5.47532e+10
+epoch 10001: Test Error: 5.28673e+10
+epoch 12001: Test Error: 4.39154e+10
+epoch 14001: Test Error: 2.16142e+10
+epoch 16001: Test Error: 8.14826e+09
+epoch 18001: Test Error: 6.33267e+09
+epoch 20000: Test Error: 5.96376e+09
+
+4-Layer: dropout: None
+
+epoch     1: Test Error: 5.51864e+10
+epoch  2001: Test Error: 5.5163e+10
+epoch  4001: Test Error: 4.5425e+09
+epoch  6001: Test Error: 4.28508e+09
+epoch  8001: Test Error: 4.19409e+09
+epoch 10001: Test Error: 4.13876e+09
+epoch 12001: Test Error: 4.09177e+09
+epoch 14001: Test Error: 3.97851e+09
+epoch 16001: Test Error: 3.92917e+09
+epoch 18001: Test Error: 3.85016e+09
+epoch 20000: Test Error: 3.84903e+09
+
+4-Layer: dropout: 0.9
+
+epoch     1: Test Error: 5.51864e+10
+epoch  2001: Test Error: 5.51661e+10
+epoch  4001: Test Error: 5.36544e+09
+epoch  6001: Test Error: 5.14511e+09
+epoch  8001: Test Error: 4.8878e+09
+epoch 10001: Test Error: 4.73477e+09
+epoch 12001: Test Error: 4.63589e+09
+epoch 14001: Test Error: 4.55454e+09
+epoch 16001: Test Error: 4.50119e+09
+epoch 18001: Test Error: 4.6964e+09
+epoch 20000: Test Error: 4.54866e+09
+
+5-Layer: dropout: None
+
+epoch     1: Test Error: 5.51864e+10
+epoch  2001: Test Error: 4.39322e+09
+epoch  4001: Test Error: 4.01802e+09
+epoch  6001: Test Error: 3.77573e+09
+epoch  8001: Test Error: 3.52211e+09
+epoch 10001: Test Error: 3.52783e+09
+epoch 12001: Test Error: 3.61345e+09
+epoch 14001: Test Error: 3.42894e+09
+epoch 16001: Test Error: 3.54731e+09
+epoch 18001: Test Error: 3.47583e+09
+epoch 20000: Test Error: 3.40329e+09
+
+5-Layer: dropout: 0.9
+
+epoch     1: Test Error: 5.51863e+10
+epoch  2001: Test Error: 6.10372e+09
+epoch  4001: Test Error: 5.96143e+09
+epoch  6001: Test Error: 5.22045e+09
+epoch  8001: Test Error: 4.89314e+09
+epoch 10001: Test Error: 4.55125e+09
+epoch 12001: Test Error: 5.02526e+09
+epoch 14001: Test Error: 4.52537e+09
+epoch 16001: Test Error: 4.67652e+09
+epoch 18001: Test Error: 4.36785e+09
+epoch 20000: Test Error: 4.45081e+09
