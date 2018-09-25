@@ -58,3 +58,23 @@ def load_data(path):
     data_k = np.zeros((data_y.size, data_y.max() + 1))  # data_k = np.zeros(n,6)
     data_k[np.arange(data_y.size), data_y] = 1
     return data_x, data_k
+
+
+def k_fold(n, k):
+    """
+
+    :param n:
+    :param k:
+    :return:
+    """
+    num_per_fold = n // k
+    result = []
+    index_set = set(range(n))
+    for i in range(k):
+        if i != k - 1:
+            test_idx = range(i * num_per_fold, (i + 1) * num_per_fold)
+        else:
+            test_idx = range(i * num_per_fold, n)
+        train_idx = list(index_set - set(test_idx))
+        result.append((train_idx, test_idx))
+    return result

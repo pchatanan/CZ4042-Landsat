@@ -1,0 +1,21 @@
+2a)
+
+Lr 5e-07: Cross-Validation Error mean: 4527047680.0, std: 263287872.0
+Lr 1e-07: Cross-Validation Error mean: 4742462464.0, std: 232959200.0
+Lr 5e-09: Cross-Validation Error mean: 56474906624.0, std: 623174848.0
+Lr 1e-09: Cross-Validation Error mean: 56497446912.0, std: 623105216.0
+Lr 1e-10: Cross-Validation Error mean: 56498331648.0, std: 623104832.0
+
+2b)
+
+epoch     1: Test Error: 5.51856e+10
+epoch   101: Test Error: 5.18924e+09
+epoch   201: Test Error: 4.7598e+09
+epoch   301: Test Error: 4.55992e+09
+epoch   401: Test Error: 4.81428e+09
+epoch   501: Test Error: 4.60092e+09
+epoch   601: Test Error: 4.40636e+09
+epoch   701: Test Error: 4.77888e+09
+epoch   801: Test Error: 4.37463e+09
+epoch   901: Test Error: 4.52809e+09
+epoch  1000: Test Error: 4.25769e+09
