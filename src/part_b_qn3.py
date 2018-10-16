@@ -1,5 +1,5 @@
 #
-# Project 1: Part B Question 2
+# Project 1: Part B Question 3
 #
 import pylab as plt
 
@@ -44,19 +44,14 @@ for num_neuron in num_neuron_list:
     x0 = tf.placeholder(tf.float32, [None, NUM_FEATURES])
     d = tf.placeholder(tf.float32, [None, 1])
 
-    # Build the graph for the deep net
-    W1 = init_weights(num_neuron, 1)
-    b1 = init_bias(1)
-    W0 = init_weights(NUM_FEATURES, num_neuron)
-    b0 = init_bias(num_neuron)
+    # Initialize weights and bias
+    W, b = init_weights_bias(NUM_FEATURES, [num_neuron], 1)
 
-    # Build the graph for the deep net
-    # x0 --W0,b0--> u0 --f0--> x1 --W1,b1--> y
-    u0 = tf.matmul(x0, W0) + b0
-    x1 = tf.nn.relu(u0)  # f0
-    y = tf.matmul(x1, W1) + b1
+    # Build a computational graph
+    y = build_graph(x0, W, b, [tf.nn.relu] * len([num_neuron]), None)
 
-    reg = tf.nn.l2_loss(W0) + tf.nn.l2_loss(W1)
+    reg = l2_reg(W)
+
     loss = tf.reduce_mean(tf.square(d - y) + beta * reg)
     error = tf.reduce_mean(tf.square(d - y))
 

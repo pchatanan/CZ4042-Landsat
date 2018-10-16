@@ -62,10 +62,12 @@ def load_data(path):
 
 def k_fold(n, k):
     """
-
-    :param n:
-    :param k:
-    :return:
+    This function creates a list of indexes for k-fold
+    For example: n = 10 k = 5
+    return => [[7,0], [1,4], [2,3], [9,6], [5,9]]
+    :param n: Total number of train sets
+    :param k: k-fold
+    :return: list of list of indexes
     """
     num_per_fold = n // k
     result = []
@@ -81,6 +83,13 @@ def k_fold(n, k):
 
 
 def init_weights_bias(n_in, n_hidden_list, n_out):
+    """
+    This function initializes weights and biases
+    :param n_in: Number of features input
+    :param n_hidden_list:  a list of number of hidden neurons
+    :param n_out: Number of output node
+    :return: a tuple of weights and biases lists
+    """
     W, b = [], []
     node_list = n_hidden_list
     node_list.insert(0, n_in)
@@ -97,6 +106,15 @@ def init_weights_bias(n_in, n_hidden_list, n_out):
 
 
 def build_graph(x0, w, b, act_func_list, dropout_keep_prob):
+    """
+    This function builds a computational graph.
+    :param x0: the placeholder for input
+    :param w: weight list
+    :param b: bias list
+    :param act_func_list: a list of activation functions for hidden layers
+    :param dropout_keep_prob: if None then no dropout, else the value should be between 0 to 1
+    :return: the output of computational graph
+    """
     x, u = [x0], []
     for i, act_func in enumerate(act_func_list):
         u.append(tf.matmul(x[i], w[i]) + b[i])
@@ -109,6 +127,11 @@ def build_graph(x0, w, b, act_func_list, dropout_keep_prob):
 
 
 def l2_reg(w):
+    """
+    Compute L2 regularization from weights
+    :param w: weights list
+    :return: regularization factor
+    """
     reg = tf.nn.l2_loss(w.pop(0))
     for weight in w:
         reg += tf.nn.l2_loss(weight)

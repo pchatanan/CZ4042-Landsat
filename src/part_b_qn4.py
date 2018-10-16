@@ -1,5 +1,5 @@
 #
-# Project 1: Part B Question 1
+# Project 1: Part B Question 4
 #
 import pylab as plt
 
