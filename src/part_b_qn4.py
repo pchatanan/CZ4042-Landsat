@@ -50,7 +50,7 @@ for num_neuron in num_neuron_list:
         y = build_graph(x0, W, b, [tf.nn.relu] * len(num_neuron), keep_prob)
 
         reg = l2_reg(W)
-        loss = tf.reduce_mean(tf.square(d - y) + beta * reg)
+        loss = tf.square(d - y) + beta * reg
 
         # Create the gradient descent optimizer with the given learning rate.
         optimizer = tf.train.GradientDescentOptimizer(lr)
@@ -61,14 +61,16 @@ for num_neuron in num_neuron_list:
         with tf.Session() as sess:
             sess.run(tf.global_variables_initializer())
             test_err = []
+
+            idx = np.arange(split)
             for i in range(epochs):
 
-                # randomly choose batch
-                rand_index = np.random.choice(n_train, size=batch_size)
-                x_batch = X[rand_index]
-                d_batch = D[rand_index]
-
-                train_op.run(feed_dict={x0: x_batch, d: d_batch})
+                # shuffle data set and execute mini batch
+                np.random.shuffle(idx)
+                X, D = X[idx], D[idx]
+                for start, end in zip(range(0, split, batch_size), range(batch_size, split, batch_size)):
+                    x_batch, d_batch = X[start:end], D[start:end]
+                    train_op.run(feed_dict={x0: x_batch, d: d_batch})
                 err = error.eval(feed_dict={x0: X_tst, d: D_tst})
                 test_err.append(err)
 

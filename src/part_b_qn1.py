@@ -9,7 +9,7 @@ NUM_FEATURES = 8
 
 lr = 1e-7
 beta = 1e-3
-epochs = 10000
+epochs = 100
 batch_size = 32
 num_neuron = 30
 seed = 7
@@ -33,6 +33,7 @@ mean, std = np.mean(X, axis=0), np.std(X, axis=0)
 X = (X - mean) / std
 X_tst = (X_tst - mean) / std
 
+
 # Create the model
 x0 = tf.placeholder(tf.float32, [None, NUM_FEATURES])
 d = tf.placeholder(tf.float32, [None, 1])
@@ -50,25 +51,27 @@ x1 = tf.nn.relu(u0)  # f0
 y = tf.matmul(x1, W1) + b1
 
 reg = tf.nn.l2_loss(W0) + tf.nn.l2_loss(W1)
-loss = tf.reduce_mean(tf.square(d - y) + beta * reg)
+error = tf.reduce_mean(tf.square(d - y))
+loss = error + beta * reg
 
 # Create the gradient descent optimizer with the given learning rate.
 optimizer = tf.train.GradientDescentOptimizer(lr)
 train_op = optimizer.minimize(loss)
 
-error = tf.reduce_mean(tf.square(d - y))
 
 with tf.Session() as sess:
     sess.run(tf.global_variables_initializer())
     train_err = []
+
+    idx = np.arange(split)
     for i in range(epochs):
 
-        # randomly choose batch
-        rand_index = np.random.choice(n_train, size=batch_size)
-        x_batch = X[rand_index]
-        d_batch = D[rand_index]
-
-        train_op.run(feed_dict={x0: x_batch, d: d_batch})
+        # shuffle data set and execute mini batch
+        np.random.shuffle(idx)
+        X, D = X[idx], D[idx]
+        for start, end in zip(range(0, split, batch_size), range(batch_size, split, batch_size)):
+            x_batch, d_batch = X[start:end], D[start:end]
+            train_op.run(feed_dict={x0: x_batch, d: d_batch})
         err = error.eval(feed_dict={x0: X, d: D})
         train_err.append(err)
 

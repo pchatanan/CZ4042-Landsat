@@ -10,7 +10,7 @@ NUM_FEATURES = 8
 
 lr = 0.5e-6
 beta = 1e-3
-epochs = 1000
+epochs = 10
 batch_size = 32
 num_neuron_list = [20, 40, 60, 80, 100]
 seed = 7
@@ -57,8 +57,8 @@ for num_neuron in num_neuron_list:
     y = tf.matmul(x1, W1) + b1
 
     reg = tf.nn.l2_loss(W0) + tf.nn.l2_loss(W1)
-    loss = tf.reduce_mean(tf.square(d - y) + beta * reg)
     error = tf.reduce_mean(tf.square(d - y))
+    loss = error + beta * reg
 
     optimizer = tf.train.GradientDescentOptimizer(lr)
     train_op = optimizer.minimize(loss)
@@ -68,13 +68,15 @@ for num_neuron in num_neuron_list:
         print("\nNo. of hidden neurons: {} : {} Fold:".format(num_neuron, i + 1))
         with tf.Session() as sess:
             sess.run(tf.global_variables_initializer())
-            for j in range(epochs):
-                # randomly choose batch
-                rand_index = random.sample(train_idx, batch_size)
-                x_batch = X[rand_index]
-                d_batch = D[rand_index]
 
-                train_op.run(feed_dict={x0: x_batch, d: d_batch})
+            idx = np.arange(split)
+            for j in range(epochs):
+                # shuffle data set and execute mini batch
+                np.random.shuffle(idx)
+                X, D = X[idx], D[idx]
+                for start, end in zip(range(0, split, batch_size), range(batch_size, split, batch_size)):
+                    x_batch, d_batch = X[start:end], D[start:end]
+                    train_op.run(feed_dict={x0: x_batch, d: d_batch})
 
             # cross-validation error
             x_tst = X[test_idx]
@@ -127,13 +129,16 @@ train_op = optimizer.minimize(loss)
 with tf.Session() as sess:
     sess.run(tf.global_variables_initializer())
     test_err = []
-    for i in range(epochs):
-        # randomly choose batch
-        rand_index = np.random.choice(n_train, size=batch_size)
-        x_batch = X[rand_index]
-        d_batch = D[rand_index]
 
-        train_op.run(feed_dict={x0: x_batch, d: d_batch})
+    idx = np.arange(split)
+    for i in range(epochs):
+        # shuffle data set and execute mini batch
+        np.random.shuffle(idx)
+        X, D = X[idx], D[idx]
+        for start, end in zip(range(0, split, batch_size), range(batch_size, split, batch_size)):
+            x_batch, d_batch = X[start:end], D[start:end]
+            train_op.run(feed_dict={x0: x_batch, d: d_batch})
+
         err = error.eval(feed_dict={x0: X_tst, d: D_tst})
         test_err.append(err)
 
