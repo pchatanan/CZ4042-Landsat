@@ -5,7 +5,7 @@ import pylab as plt
 from src.utils import *
 
 lr = 0.01
-epochs = 50000
+epochs = 10
 batch_size = 16
 # L2 weight decay (beta)
 beta_list = [0, 1e-3, 1e-6, 1e-9, 1e-12]
@@ -17,6 +17,10 @@ tf.set_random_seed(seed)
 # read train data
 X, K = load_data('./raw/sat_train.txt')
 X_tst, K_tst = load_data('./raw/sat_test.txt')
+min_feature = np.min(X, axis=0)
+max_feature = np.max(X, axis=0)
+X = scale(X, min_feature, max_feature)
+X_tst = scale(X_tst, min_feature, max_feature)
 
 num_features = X.shape[1]
 num_classes = K.shape[1]
@@ -61,18 +65,18 @@ for i, beta in enumerate(beta_list, 1):
     print("\nBeta: {}\n".format(beta))
     with tf.Session() as sess:
         sess.run(tf.global_variables_initializer())
-        train_mini_err = []
         train_err = []
         test_acc = []
+
+        idx = np.arange(num_data)
         for j in range(epochs):
 
-            # randomly choose batch
-            rand_index = np.random.choice(num_data, size=batch_size)
-            x_batch = X[rand_index]
-            k_batch = K[rand_index]
-
-            train_op.run(feed_dict={x: x_batch, k: k_batch})
-            train_mini_err.append(1 - accuracy.eval(feed_dict={x: x_batch, k: k_batch}))
+            # shuffle data set and execute mini batch
+            np.random.shuffle(idx)
+            X, K = X[idx], K[idx]
+            for start, end in zip(range(0, num_data, batch_size), range(batch_size, num_data, batch_size)):
+                x_batch, k_batch = X[start:end], K[start:end]
+                train_op.run(feed_dict={x: x_batch, k: k_batch})
             train_err.append(1 - accuracy.eval(feed_dict={x: X, k: K}))
             test_acc.append(accuracy.eval(feed_dict={x: X_tst, k: K_tst}))
 
@@ -83,8 +87,7 @@ for i, beta in enumerate(beta_list, 1):
 
         # plot learning curves
         plt.figure(i)
-        plt.plot(range(epochs), train_mini_err, 'g', label='Train(batch) Error')
-        plt.plot(range(epochs), train_err, 'b', label='Train(all) Error')
+        plt.plot(range(epochs), train_err, 'b', label='Train Error')
         plt.plot(range(epochs), test_acc, 'r', label='Test Accuracy')
         plt.xlabel('Epochs')
         plt.ylabel('Train Error and Test Accuracy')

@@ -5,7 +5,7 @@ import pylab as plt
 from src.utils import *
 
 lr = 0.01
-epochs = 2000
+epochs = 10
 batch_size = 32
 # L2 weight decay (beta)
 beta = 1e-6
@@ -62,31 +62,29 @@ accuracy = tf.reduce_mean(correct_prediction)
 with tf.Session() as sess:
     sess.run(tf.global_variables_initializer())
     # train_mini_acc = []
-    train_acc = []
+    train_err = []
     test_acc = []
 
     idx = np.arange(num_data)
     for i in range(epochs):
 
-        # randomly choose batch
+        # shuffle data set and execute mini batch
         np.random.shuffle(idx)
         X, K = X[idx], K[idx]
         for start, end in zip(range(0, num_data, batch_size), range(batch_size, num_data, batch_size)):
-            # rand_index = np.random.choice(num_data, size=batch_size)
             x_batch, k_batch = X[start:end], K[start:end]
             train_op.run(feed_dict={x: x_batch, k: k_batch})
 
         # train_mini_acc.append(accuracy.eval(feed_dict={x: x_batch, k: k_batch}))
-        train_acc.append(accuracy.eval(feed_dict={x: X, k: K}))
+        train_err.append(1-accuracy.eval(feed_dict={x: X, k: K}))
         test_acc.append(accuracy.eval(feed_dict={x: X_tst, k: K_tst}))
 
         if i % (epochs//10) == 0 or i == epochs - 1:
-            print('epoch {0:5d}: accuracy Train: {1:8.4f} Test: {2:8.4f}'.format(i + 1, train_acc[i], test_acc[i]))
+            print('epoch {0:5d}: Train Err: {1:8.4f} Test Acc: {2:8.4f}'.format(i + 1, train_err[i], test_acc[i]))
 
 # plot learning curves
 plt.figure(1)
-# plt.plot(range(epochs), train_mini_acc, 'g', label='Train(batch) Accuracy')
-plt.plot(range(epochs), train_acc, 'b', label='Train(all) Accuracy')
+plt.plot(range(epochs), train_err, 'b', label='Train Error')
 plt.plot(range(epochs), test_acc, 'r', label='Test Accuracy')
 plt.xlabel('Epochs')
 plt.ylabel('Accuracy')
