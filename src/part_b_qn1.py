@@ -9,7 +9,7 @@ NUM_FEATURES = 8
 
 lr = 1e-7
 beta = 1e-3
-epochs = 100
+epochs = 200
 batch_size = 32
 num_neuron = 30
 seed = 7

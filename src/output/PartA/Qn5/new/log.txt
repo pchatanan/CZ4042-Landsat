@@ -1,0 +1,14 @@
+3-layer
+
+4-layer
+epoch     1: accuracy Train:   0.2340 Test:   0.2350
+epoch    51: accuracy Train:   0.7536 Test:   0.7360
+epoch   101: accuracy Train:   0.8210 Test:   0.8010
+epoch   151: accuracy Train:   0.8352 Test:   0.8140
+epoch   201: accuracy Train:   0.8422 Test:   0.8180
+epoch   251: accuracy Train:   0.8462 Test:   0.8215
+epoch   301: accuracy Train:   0.8519 Test:   0.8225
+epoch   351: accuracy Train:   0.8541 Test:   0.8240
+epoch   401: accuracy Train:   0.8528 Test:   0.8235
+epoch   451: accuracy Train:   0.8575 Test:   0.8260
+epoch   500: accuracy Train:   0.8575 Test:   0.8295

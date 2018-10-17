@@ -1,0 +1,69 @@
+Hidden Neurons: 5
+epoch     1: Train Err:   0.7833 Test Acc:   0.1985
+epoch    51: Train Err:   0.1998 Test Acc:   0.7725
+epoch   101: Train Err:   0.1743 Test Acc:   0.8005
+epoch   151: Train Err:   0.1628 Test Acc:   0.8100
+epoch   201: Train Err:   0.1594 Test Acc:   0.8200
+epoch   251: Train Err:   0.1558 Test Acc:   0.8225
+epoch   301: Train Err:   0.1542 Test Acc:   0.8205
+epoch   351: Train Err:   0.1508 Test Acc:   0.8220
+epoch   401: Train Err:   0.1472 Test Acc:   0.8285
+epoch   451: Train Err:   0.1481 Test Acc:   0.8305
+epoch   500: Train Err:   0.1445 Test Acc:   0.8330
+Time taken per epoch(sec):   0.401853 sec
+
+Hidden Neurons: 10
+epoch     1: Train Err:   0.7583 Test Acc:   0.2305
+epoch    51: Train Err:   0.1890 Test Acc:   0.7845
+epoch   101: Train Err:   0.1669 Test Acc:   0.8100
+epoch   151: Train Err:   0.1596 Test Acc:   0.8190
+epoch   201: Train Err:   0.1581 Test Acc:   0.8225
+epoch   251: Train Err:   0.1549 Test Acc:   0.8255
+epoch   301: Train Err:   0.1536 Test Acc:   0.8255
+epoch   351: Train Err:   0.1477 Test Acc:   0.8275
+epoch   401: Train Err:   0.1493 Test Acc:   0.8280
+epoch   451: Train Err:   0.1488 Test Acc:   0.8300
+epoch   500: Train Err:   0.1459 Test Acc:   0.8295
+Time taken per epoch(sec):   0.385830 sec
+
+Hidden Neurons: 15
+epoch     1: Train Err:   0.5804 Test Acc:   0.3955
+epoch    51: Train Err:   0.1856 Test Acc:   0.7940
+epoch   101: Train Err:   0.1666 Test Acc:   0.8115
+epoch   151: Train Err:   0.1601 Test Acc:   0.8190
+epoch   201: Train Err:   0.1576 Test Acc:   0.8210
+epoch   251: Train Err:   0.1560 Test Acc:   0.8235
+epoch   301: Train Err:   0.1536 Test Acc:   0.8265
+epoch   351: Train Err:   0.1499 Test Acc:   0.8285
+epoch   401: Train Err:   0.1479 Test Acc:   0.8315
+epoch   451: Train Err:   0.1461 Test Acc:   0.8310
+epoch   500: Train Err:   0.1452 Test Acc:   0.8315
+Time taken per epoch(sec):   0.407029 sec
+
+Hidden Neurons: 20
+epoch     1: Train Err:   0.7082 Test Acc:   0.2855
+epoch    51: Train Err:   0.1797 Test Acc:   0.8000
+epoch   101: Train Err:   0.1646 Test Acc:   0.8070
+epoch   151: Train Err:   0.1605 Test Acc:   0.8195
+epoch   201: Train Err:   0.1578 Test Acc:   0.8200
+epoch   251: Train Err:   0.1531 Test Acc:   0.8235
+epoch   301: Train Err:   0.1536 Test Acc:   0.8240
+epoch   351: Train Err:   0.1511 Test Acc:   0.8255
+epoch   401: Train Err:   0.1495 Test Acc:   0.8270
+epoch   451: Train Err:   0.1470 Test Acc:   0.8320
+epoch   500: Train Err:   0.1448 Test Acc:   0.8325
+Time taken per epoch(sec):   0.401268 sec
+
+Hidden Neurons: 25 (I choose this)
+epoch     1: Train Err:   0.5768 Test Acc:   0.4160
+epoch    51: Train Err:   0.1804 Test Acc:   0.7995
+epoch   101: Train Err:   0.1664 Test Acc:   0.8090
+epoch   151: Train Err:   0.1596 Test Acc:   0.8170
+epoch   201: Train Err:   0.1569 Test Acc:   0.8160
+epoch   251: Train Err:   0.1549 Test Acc:   0.8210
+epoch   301: Train Err:   0.1524 Test Acc:   0.8265
+epoch   351: Train Err:   0.1511 Test Acc:   0.8280
+epoch   401: Train Err:   0.1481 Test Acc:   0.8280
+epoch   451: Train Err:   0.1484 Test Acc:   0.8280
+epoch   500: Train Err:   0.1454 Test Acc:   0.8330
+Time taken per epoch(sec):   0.378910 sec

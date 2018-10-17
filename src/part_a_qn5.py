@@ -5,10 +5,10 @@ import pylab as plt
 from src.utils import *
 
 lr = 0.01
-epochs = 200
-batch_size = 32
+epochs = 500
+batch_size = 16
 # L2 weight decay (beta)
-beta = 1e-6
+beta = 0
 
 seed = 7
 np.random.seed(seed)
@@ -24,7 +24,7 @@ X_tst = scale(X_tst, min_feature, max_feature)
 
 num_features = X.shape[1]
 num_classes = K.shape[1]
-num_hidden = [10, 10]
+num_hidden = [25, 25]
 num_data = X.shape[0]
 
 # Create the model

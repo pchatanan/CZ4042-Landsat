@@ -10,7 +10,7 @@ NUM_FEATURES = 8
 
 lr_list = [0.5e-6, 1e-7, 0.5e-8, 1e-9, 1e-10]
 beta = 1e-3
-epochs = 10
+epochs = 20
 batch_size = 32
 num_neuron = 30
 seed = 7
@@ -100,7 +100,8 @@ plt.xlabel('Learning Rate')
 plt.ylabel('Cross-Validation Error')
 plt.savefig('partB_Qn2a.png')
 
-optimal_lr = 0.5e-6
+epochs = 100
+optimal_lr = 1e-07
 optimizer = tf.train.GradientDescentOptimizer(optimal_lr)
 train_op = optimizer.minimize(loss)
 with tf.Session() as sess:

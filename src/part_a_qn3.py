@@ -7,7 +7,7 @@ from src.utils import *
 
 
 lr = 0.01
-epochs = 10
+epochs = 500
 batch_size = 16
 # L2 weight decay (beta)
 beta = 1e-6

@@ -1,0 +1,64 @@
+Beta: 0 (I choose this one)
+epoch     1: Train Err:   0.7186 Test Acc:   0.2705
+epoch    51: Train Err:   0.1784 Test Acc:   0.7975
+epoch   101: Train Err:   0.1653 Test Acc:   0.8110
+epoch   151: Train Err:   0.1610 Test Acc:   0.8195
+epoch   201: Train Err:   0.1590 Test Acc:   0.8230
+epoch   251: Train Err:   0.1558 Test Acc:   0.8240
+epoch   301: Train Err:   0.1554 Test Acc:   0.8235
+epoch   351: Train Err:   0.1508 Test Acc:   0.8260
+epoch   401: Train Err:   0.1457 Test Acc:   0.8295
+epoch   451: Train Err:   0.1450 Test Acc:   0.8330
+epoch   500: Train Err:   0.1402 Test Acc:   0.8350
+
+Beta: 0.001
+epoch     1: Train Err:   0.7583 Test Acc:   0.2305
+epoch    51: Train Err:   0.1824 Test Acc:   0.7955
+epoch   101: Train Err:   0.1671 Test Acc:   0.8075
+epoch   151: Train Err:   0.1632 Test Acc:   0.8100
+epoch   201: Train Err:   0.1592 Test Acc:   0.8135
+epoch   251: Train Err:   0.1583 Test Acc:   0.8200
+epoch   301: Train Err:   0.1578 Test Acc:   0.8180
+epoch   351: Train Err:   0.1578 Test Acc:   0.8235
+epoch   401: Train Err:   0.1572 Test Acc:   0.8215
+epoch   451: Train Err:   0.1565 Test Acc:   0.8190
+epoch   500: Train Err:   0.1565 Test Acc:   0.8180
+
+Beta: 1e-6
+epoch     1: Train Err:   0.7294 Test Acc:   0.2570
+epoch    51: Train Err:   0.1817 Test Acc:   0.7980
+epoch   101: Train Err:   0.1651 Test Acc:   0.8125
+epoch   151: Train Err:   0.1596 Test Acc:   0.8180
+epoch   201: Train Err:   0.1565 Test Acc:   0.8190
+epoch   251: Train Err:   0.1558 Test Acc:   0.8230
+epoch   301: Train Err:   0.1524 Test Acc:   0.8225
+epoch   351: Train Err:   0.1513 Test Acc:   0.8280
+epoch   401: Train Err:   0.1486 Test Acc:   0.8285
+epoch   451: Train Err:   0.1484 Test Acc:   0.8290
+epoch   500: Train Err:   0.1466 Test Acc:   0.8320
+
+Beta: 1e-9
+epoch     1: Train Err:   0.5278 Test Acc:   0.4335
+epoch    51: Train Err:   0.1817 Test Acc:   0.7975
+epoch   101: Train Err:   0.1657 Test Acc:   0.8080
+epoch   151: Train Err:   0.1603 Test Acc:   0.8185
+epoch   201: Train Err:   0.1596 Test Acc:   0.8200
+epoch   251: Train Err:   0.1540 Test Acc:   0.8220
+epoch   301: Train Err:   0.1542 Test Acc:   0.8230
+epoch   351: Train Err:   0.1522 Test Acc:   0.8235
+epoch   401: Train Err:   0.1504 Test Acc:   0.8295
+epoch   451: Train Err:   0.1470 Test Acc:   0.8315
+epoch   500: Train Err:   0.1461 Test Acc:   0.8305
+
+Beta: 1e-12
+epoch     1: Train Err:   0.5671 Test Acc:   0.4220
+epoch    51: Train Err:   0.1802 Test Acc:   0.8005
+epoch   101: Train Err:   0.1662 Test Acc:   0.8090
+epoch   151: Train Err:   0.1599 Test Acc:   0.8190
+epoch   201: Train Err:   0.1563 Test Acc:   0.8185
+epoch   251: Train Err:   0.1545 Test Acc:   0.8235
+epoch   301: Train Err:   0.1522 Test Acc:   0.8275
+epoch   351: Train Err:   0.1515 Test Acc:   0.8295
+epoch   401: Train Err:   0.1486 Test Acc:   0.8285
+epoch   451: Train Err:   0.1477 Test Acc:   0.8305
+epoch   500: Train Err:   0.1448 Test Acc:   0.8335

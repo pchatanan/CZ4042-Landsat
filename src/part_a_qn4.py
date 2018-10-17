@@ -5,7 +5,7 @@ import pylab as plt
 from src.utils import *
 
 lr = 0.01
-epochs = 10
+epochs = 500
 batch_size = 16
 # L2 weight decay (beta)
 beta_list = [0, 1e-3, 1e-6, 1e-9, 1e-12]
@@ -24,7 +24,7 @@ X_tst = scale(X_tst, min_feature, max_feature)
 
 num_features = X.shape[1]
 num_classes = K.shape[1]
-num_hidden = 10
+num_hidden = 25
 num_data = X.shape[0]
 
 time_list = []

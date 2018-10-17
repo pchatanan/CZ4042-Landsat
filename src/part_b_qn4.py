@@ -9,9 +9,9 @@ NUM_FEATURES = 8
 
 lr = 1e-9
 beta = 1e-3
-epochs = 20000
+epochs = 50
 batch_size = 32
-num_neuron_list = [[60], [60, 20], [60, 20, 20]]
+num_neuron_list = [[40], [40, 20], [40, 20, 20]]
 keep_prob_list = [None, 0.9]
 seed = 7
 np.random.seed(seed)

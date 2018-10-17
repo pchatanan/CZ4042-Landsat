@@ -1,0 +1,11 @@
+epoch     1: Validation Error: 4.9616e+09
+epoch    21: Validation Error: 4.2557e+09
+epoch    41: Validation Error: 4.14577e+09
+epoch    61: Validation Error: 4.05822e+09
+epoch    81: Validation Error: 4.01841e+09
+epoch   101: Validation Error: 4.06003e+09
+epoch   121: Validation Error: 4.05874e+09
+epoch   141: Validation Error: 4.04369e+09
+epoch   161: Validation Error: 4.07333e+09
+epoch   181: Validation Error: 4.01297e+09
+epoch   200: Validation Error: 4.0234e+09

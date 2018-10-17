@@ -1,0 +1,11 @@
+epoch     1: Train Err:   0.7069 Test Acc:   0.2840
+epoch    51: Train Err:   0.2519 Test Acc:   0.7275
+epoch   101: Train Err:   0.1957 Test Acc:   0.7785
+epoch   151: Train Err:   0.1777 Test Acc:   0.7975
+epoch   201: Train Err:   0.1671 Test Acc:   0.8065
+epoch   251: Train Err:   0.1637 Test Acc:   0.8120
+epoch   301: Train Err:   0.1608 Test Acc:   0.8160
+epoch   351: Train Err:   0.1594 Test Acc:   0.8190
+epoch   401: Train Err:   0.1592 Test Acc:   0.8235
+epoch   451: Train Err:   0.1563 Test Acc:   0.8235
+epoch   500: Train Err:   0.1565 Test Acc:   0.8245
