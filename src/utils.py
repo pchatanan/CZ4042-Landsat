@@ -49,8 +49,6 @@ def load_data(path):
     # read train data
     data_set = np.loadtxt(path, delimiter=' ')
     data_x, data_y = data_set[:, :-1], data_set[:, -1].astype(int)
-    # scale X (8-bit image with value 0 to 255)
-    data_x = scale(data_x, 0, 255)
     # clean Y
     data_y[data_y == 7] = 6
     data_y -= 1

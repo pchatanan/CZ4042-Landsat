@@ -5,7 +5,7 @@ import pylab as plt
 from src.utils import *
 
 lr = 0.01
-epochs = 200000
+epochs = 2000
 batch_size = 32
 # L2 weight decay (beta)
 beta = 1e-6
@@ -17,6 +17,10 @@ tf.set_random_seed(seed)
 # read train and test data
 X, K = load_data('./raw/sat_train.txt')
 X_tst, K_tst = load_data('./raw/sat_test.txt')
+min_feature = np.min(X, axis=0)
+max_feature = np.max(X, axis=0)
+X = scale(X, min_feature, max_feature)
+X_tst = scale(X_tst, min_feature, max_feature)
 
 num_features = X.shape[1]
 num_classes = K.shape[1]
@@ -46,7 +50,7 @@ y = tf.argmax(p, axis=1)
 cross_entropy = tf.nn.softmax_cross_entropy_with_logits_v2(labels=k, logits=u)
 loss_no_reg = tf.reduce_mean(cross_entropy)
 reg = tf.nn.l2_loss(V) + tf.nn.l2_loss(W)
-loss = tf.reduce_mean(loss_no_reg + beta * reg)
+loss = loss_no_reg + beta * reg
 
 # Create the gradient descent optimizer with the given learning rate
 optimizer = tf.train.GradientDescentOptimizer(lr)
@@ -57,18 +61,22 @@ accuracy = tf.reduce_mean(correct_prediction)
 
 with tf.Session() as sess:
     sess.run(tf.global_variables_initializer())
-    train_mini_acc = []
+    # train_mini_acc = []
     train_acc = []
     test_acc = []
+
+    idx = np.arange(num_data)
     for i in range(epochs):
 
         # randomly choose batch
-        rand_index = np.random.choice(num_data, size=batch_size)
-        x_batch = X[rand_index]
-        k_batch = K[rand_index]
+        np.random.shuffle(idx)
+        X, K = X[idx], K[idx]
+        for start, end in zip(range(0, num_data, batch_size), range(batch_size, num_data, batch_size)):
+            # rand_index = np.random.choice(num_data, size=batch_size)
+            x_batch, k_batch = X[start:end], K[start:end]
+            train_op.run(feed_dict={x: x_batch, k: k_batch})
 
-        train_op.run(feed_dict={x: x_batch, k: k_batch})
-        train_mini_acc.append(accuracy.eval(feed_dict={x: x_batch, k: k_batch}))
+        # train_mini_acc.append(accuracy.eval(feed_dict={x: x_batch, k: k_batch}))
         train_acc.append(accuracy.eval(feed_dict={x: X, k: K}))
         test_acc.append(accuracy.eval(feed_dict={x: X_tst, k: K_tst}))
 
@@ -77,7 +85,7 @@ with tf.Session() as sess:
 
 # plot learning curves
 plt.figure(1)
-plt.plot(range(epochs), train_mini_acc, 'g', label='Train(batch) Accuracy')
+# plt.plot(range(epochs), train_mini_acc, 'g', label='Train(batch) Accuracy')
 plt.plot(range(epochs), train_acc, 'b', label='Train(all) Accuracy')
 plt.plot(range(epochs), test_acc, 'r', label='Test Accuracy')
 plt.xlabel('Epochs')
