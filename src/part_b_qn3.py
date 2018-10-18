@@ -121,8 +121,8 @@ x1 = tf.nn.relu(u0)  # f0
 y = tf.matmul(x1, W1) + b1
 
 reg = tf.nn.l2_loss(W0) + tf.nn.l2_loss(W1)
-loss = tf.reduce_mean(tf.square(d - y) + beta * reg)
 error = tf.reduce_mean(tf.square(d - y))
+loss = error + beta * reg
 
 optimizer = tf.train.GradientDescentOptimizer(lr)
 train_op = optimizer.minimize(loss)

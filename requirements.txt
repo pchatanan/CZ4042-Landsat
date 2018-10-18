@@ -1,4 +1,4 @@
 # Machine learning libraries
-tensorflow-gpu
+tensorflow
 matplotlib
 numpy

@@ -9,7 +9,7 @@ NUM_FEATURES = 8
 
 lr = 1e-9
 beta = 1e-3
-epochs = 20000
+epochs = 10
 batch_size = 32
 num_neuron_list = [[60], [60, 20], [60, 20, 20]]
 keep_prob_list = [None, 0.9]
@@ -50,17 +50,17 @@ for num_neuron in num_neuron_list:
         y = build_graph(x0, W, b, [tf.nn.relu] * len(num_neuron), keep_prob)
 
         reg = l2_reg(W)
-        loss = tf.square(d - y) + beta * reg
+        error = tf.reduce_mean(tf.square(d - y))
+        loss = error + beta * reg
 
         # Create the gradient descent optimizer with the given learning rate.
         optimizer = tf.train.GradientDescentOptimizer(lr)
         train_op = optimizer.minimize(loss)
 
-        error = tf.reduce_mean(tf.square(d - y))
-
         with tf.Session() as sess:
             sess.run(tf.global_variables_initializer())
             test_err = []
+            writer = tf.summary.FileWriter("summary", sess.graph)
 
             idx = np.arange(split)
             for i in range(epochs):
@@ -85,5 +85,6 @@ for num_neuron in num_neuron_list:
             plt.ylabel('Test Error')
             plt.legend(loc='best')
             plt.savefig('partB_Qn4({}-Layer drop-{}).png'.format(len(num_neuron)+2, str(keep_prob)))
+            writer.close()
 
 plt.show()

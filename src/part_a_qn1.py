@@ -61,6 +61,7 @@ accuracy = tf.reduce_mean(correct_prediction)
 
 with tf.Session() as sess:
     sess.run(tf.global_variables_initializer())
+    writer = tf.summary.FileWriter("summary", sess.graph)
     # train_mini_acc = []
     train_err = []
     test_acc = []
@@ -82,6 +83,7 @@ with tf.Session() as sess:
         if i % (epochs//10) == 0 or i == epochs - 1:
             print('epoch {0:5d}: Train Err: {1:8.4f} Test Acc: {2:8.4f}'.format(i + 1, train_err[i], test_acc[i]))
 
+    writer.close()
 # plot learning curves
 plt.figure(1)
 plt.plot(range(epochs), train_err, 'b', label='Train Error')
