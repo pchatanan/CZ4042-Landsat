@@ -6,6 +6,13 @@ Lr 5e-09: Cross-Validation Error mean: 4840467456.0, std: 116353120.0
 Lr 1e-09: Cross-Validation Error mean: 56253407232.0, std: 1377300352.0
 Lr 1e-10: Cross-Validation Error mean: 56865480704.0, std: 651732032.0
 
+(100  epochs)
+Lr 5e-07: Cross-Validation Error mean: 4181947904.0, std: 206221024.0
+Lr 1e-07: Cross-Validation Error mean: 4022402304.0, std: 86568352.0
+Lr 5e-09: Cross-Validation Error mean: 4093928192.0, std: 84050776.0
+Lr 1e-09: Cross-Validation Error mean: 4403936256.0, std: 145992352.0
+Lr 1e-10: Cross-Validation Error mean: 5686623744.0, std: 115156832.0
+
 2b)
 
 epoch     1: Test Error: 4.83778e+09

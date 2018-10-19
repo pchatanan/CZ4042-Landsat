@@ -5,6 +5,12 @@ No. of hidden neurons 40: Cross-Validation Error mean: 4532106240.0, std: 274142
 No. of hidden neurons 60: Cross-Validation Error mean: 4476632064.0, std: 260912000.0
 No. of hidden neurons 80: Cross-Validation Error mean: 4495222784.0, std: 260405712.0
 No. of hidden neurons 100: Cross-Validation Error mean: 4549828608.0, std: 157124624.0
+ (100 epochs)
+No. of hidden neurons 20: Cross-Validation Error mean: 4137228288.0, std: 167505648.0
+No. of hidden neurons 40: Cross-Validation Error mean: 4001045248.0, std: 108525120.0
+No. of hidden neurons 60: Cross-Validation Error mean: 4109739264.0, std: 114238280.0
+No. of hidden neurons 80: Cross-Validation Error mean: 4086731264.0, std: 224452080.0
+No. of hidden neurons 100: Cross-Validation Error mean: 4125546496.0, std: 184966416.0
 
 3b)
 
@@ -19,3 +25,15 @@ epoch   701: Test Error: 4.75435e+09
 epoch   801: Test Error: 4.36613e+09
 epoch   901: Test Error: 4.51017e+09
 epoch  1000: Test Error: 4.22362e+09
+
+epoch     1: Test Error: 4.82636e+09
+epoch    11: Test Error: 4.18922e+09
+epoch    21: Test Error: 4.16699e+09
+epoch    31: Test Error: 3.86771e+09
+epoch    41: Test Error: 3.85326e+09
+epoch    51: Test Error: 3.76552e+09
+epoch    61: Test Error: 3.76215e+09
+epoch    71: Test Error: 3.79024e+09
+epoch    81: Test Error: 3.73698e+09
+epoch    91: Test Error: 3.73968e+09
+epoch   100: Test Error: 3.72724e+09
