@@ -1,0 +1,77 @@
+3-Layer: dropout: None
+epoch     1: Test Error: 5.51858e+10
+epoch    11: Test Error: 5.51652e+10
+epoch    21: Test Error: 5.43396e+10
+epoch    31: Test Error: 2.92672e+10
+epoch    41: Test Error: 6.13303e+09
+epoch    51: Test Error: 5.54913e+09
+epoch    61: Test Error: 5.24102e+09
+epoch    71: Test Error: 5.05295e+09
+epoch    81: Test Error: 4.9311e+09
+epoch    91: Test Error: 4.84664e+09
+epoch   100: Test Error: 4.79094e+09
+
+3-Layer: dropout: 0.9
+epoch     1: Test Error: 5.51857e+10
+epoch    11: Test Error: 5.51559e+10
+epoch    21: Test Error: 5.3951e+10
+epoch    31: Test Error: 2.42789e+10
+epoch    41: Test Error: 6.52193e+09
+epoch    51: Test Error: 5.81349e+09
+epoch    61: Test Error: 5.60401e+09
+epoch    71: Test Error: 5.40952e+09
+epoch    81: Test Error: 5.25982e+09
+epoch    91: Test Error: 5.17049e+09
+epoch   100: Test Error: 5.14364e+09
+
+4-Layer: dropout: None
+epoch     1: Test Error: 5.5186e+10
+epoch    11: Test Error: 4.38623e+09
+epoch    21: Test Error: 4.15797e+09
+epoch    31: Test Error: 4.00918e+09
+epoch    41: Test Error: 3.97925e+09
+epoch    51: Test Error: 3.96479e+09
+epoch    61: Test Error: 3.93274e+09
+epoch    71: Test Error: 3.91934e+09
+epoch    81: Test Error: 3.92115e+09
+epoch    91: Test Error: 3.9187e+09
+epoch   100: Test Error: 3.98994e+09
+
+4-Layer: dropout: 0.9
+epoch     1: Test Error: 5.51858e+10
+epoch    11: Test Error: 5.62679e+09
+epoch    21: Test Error: 4.91102e+09
+epoch    31: Test Error: 4.67112e+09
+epoch    41: Test Error: 4.55271e+09
+epoch    51: Test Error: 4.34767e+09
+epoch    61: Test Error: 4.34592e+09
+epoch    71: Test Error: 4.31822e+09
+epoch    81: Test Error: 4.34074e+09
+epoch    91: Test Error: 4.3186e+09
+epoch   100: Test Error: 4.34503e+09
+
+5-Layer: dropout: None
+epoch     1: Test Error: 5.51859e+10
+epoch    11: Test Error: 3.84931e+09
+epoch    21: Test Error: 3.75469e+09
+epoch    31: Test Error: 3.36717e+09
+epoch    41: Test Error: 3.30017e+09
+epoch    51: Test Error: 3.13911e+09
+epoch    61: Test Error: 3.04584e+09
+epoch    71: Test Error: 3.01783e+09
+epoch    81: Test Error: 2.9971e+09
+epoch    91: Test Error: 3.03168e+09
+epoch   100: Test Error: 3.2374e+09
+
+5-Layer: dropout: 0.9
+epoch     1: Test Error: 5.51858e+10
+epoch    11: Test Error: 5.09583e+09
+epoch    21: Test Error: 5.1485e+09
+epoch    31: Test Error: 5.32424e+09
+epoch    41: Test Error: 5.31977e+09
+epoch    51: Test Error: 4.96452e+09
+epoch    61: Test Error: 4.82453e+09
+epoch    71: Test Error: 4.73226e+09
+epoch    81: Test Error: 4.69565e+09
+epoch    91: Test Error: 4.62354e+09
+epoch   100: Test Error: 4.83905e+09
